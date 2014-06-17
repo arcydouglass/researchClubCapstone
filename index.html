@@ -13,7 +13,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
-    <title>Arcy Douglass Portfolio</title>
+    <title>Arcy Douglass Research Club Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -73,59 +73,16 @@
       <div class="jumbotron">
           <section id="contact">
           <h2>Research Club Workflow</h2>
+          <p>The goal of this project was to develop ways Research Club could present the information generated from a series of informal talks and find out the best to implement it in Pods. Over the course of the project, I gained a much deeper of understanding of how to organizes posts and pages  but also strategies to take advantage of templating within the WordPress hierarchy. Before starting the project I did not know anything about Pods but now I know how I can use Pods to organize complex sets of information and how to use the templates to make sure that it displays correctly.</p>
+          <p></p>
+          <ul>
+          <li><a href="#section1" class="tableOfContents">Background</a></li>
+          <li><a href="#section2" class="tableOfContents">Diagrams</a></li>
+          <li><a href="#section3" class="tableOfContents">Organization</a></li>
+          <li><a href="#section4" class="tableOfContents">Implementation</a></li>
+          <li><a href="#section5" class="tableOfContents">Templates</a></li>
+          </ul>
       </div>
-
-      <section id="section1">
-        <a href="http://breezeapp.herokuapp.com/" target="_blank"><h3>Breeze</h3></a>
-        <p class="projectDescription">For our final project in the Full Stack Javascript Class, I was part of a team that developed a web app that we called Breeze.  Breeze provides current wind conditions for ten of the best kite surfing locations in the Columbia River Gorge. We access data from the third party API Forecast.io with our server, load the data into Orchestrate and display the data to the client's browser by integrating Backbone and D3.  All of the site navigation is handled locally with Backbone routes.  The 48 hour wind forecast chart was rendered in D3.</p>
-        <a href="#BreezeModal" data-toggle="modal" data-target="#BreezeModal">Click To Learn More </button>
-        <p></p>
-        <a href="https://github.com/dailyCupOfJavaScript/breeze" target="_blank">Github Link</a>
-        <p></p>
-        <a href="https://trello.com/b/QVll7HKc/dailycupjavascript" target="_blank"> Project Overview on Trello Link</a>
-        <p></p>
-        <a href="http://breezeapp.herokuapp.com/" target="_blank"><img src="images/Breeze1.jpg" alt="Breeze app screenshot"/></a>
-        <p></p>
-        <a href="http://breezeapp.herokuapp.com/" target="_blank"><img src="images/Breeze2.jpg" alt="Breeze app screenshot"/></a>
-        <p></p>
-      </section>
-
-
-       <div class="modal fade" id="BreezeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Breeze App</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Breeze is based on simple idea:  What is the best place to kite surfing in the Columbia River Gorge now and in the future?  Our solution was to identify the ten most popular kite surfing span over 40 miles from The Dalles to Rooster Rocks.  After converting these locations, to lattitude and longitude coordinates our Node Express make queries to a third party API called Forecast.io. </p>
-
-                  <p>Under our free plan for Orchestrate, Forecast only allows us to make a thousand calls per day. Our solution was to have our server store the current weather data in a database.  The database that we are using for this project is Orchestrate.io.  Orchestrate stores all of the weather data so that even if we were to get a million hits we would still not exceed the Forecast limits. Our server will update Orchestrate with the current weather conditions every 10 minutes during the day and every hour at night.</p>
-
-                  <p>On the front end, our project is organized using Backbone.  Backbone is a MV* frameworks that allows us to organize the weather data according to models, collections and views.  Each page is a separate route so that the browser does not have to go back to the server for more data.  All of the data for all of the views are downloaded all at once. Each route organizes and displays the data in a unique view.</p>
-
-                  <p>Our main view is called the Table View which is a table that is sorted and color coded according the highest winds.  The next view is called the location view which provides more detailed information about a specific location.  The final view is a detailed view of a specific location that also includes both a weekly and a 48 hour forecast.  The hourly forecast includes a D3 chart that allows the user to see how the wind will rise and fall over the next two days.</p>
-                  <p></p> 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-       <section id="section2">
-        <a href="#ResearchModal" data-toggle="modal" data-target="#ResearchModal"><h3>Research Club</h3></a>
-        <p class="projectDescription">The goal of this project was to develop ways Research Club could present the information generated from a series of informal talks and find out the best to implement it in Pods. Over the course of the project, I gained a much deeper of understanding of how to organizes posts and pages  but also strategies to take advantage of templating within the WordPress hierarchy. Before starting the project I did not know anything about Pods but now I know how I can use Pods to organize complex sets of information and how to use the templates to make sure that it displays correctly.</p>
-        <a href="#ResearchModal" data-toggle="modal" data-target="#ResearchModal">Click To Learn More</button>
-        <p></p>
-        <a href="#ResearchWorkFlowModal" data-toggle="modal" data-target="#ResearchWorkFlowModal">Click for Project Work Flow</button>
-        <p></p>
-        <a href="#ResearchModal" data-toggle="modal" data-target="#ResearchModal"><img src="images/revised_speaker_pod.jpg" alt="Research Club pod diagram"/></a>
-        <p></p>
-      </section>
 
        <div class="modal fade" id="ResearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -152,82 +109,74 @@
           </div>
 
 
-           <div class="modal fade" id="ResearchWorkFlowModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Research Club Work Flow</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Research Club has monthly meetings, usually over brunch, where participants will stand up and give lightning talks about any subject that they are interested in. </p> 
+          <section id="section1">
+            <a href="#ResearchModal" data-toggle="modal" data-target="#ResearchModal"><h3>Background</h3></a>
+            <p class="projectDescription"> <p>Before I was brought on to the project, the client had decided that they will build a new WordPress site and that the information related to the talks will be organized by a plugin called Pods. My job was to analyze and organize the way Research Club should present its information and find out the best to implement it in Pods. Over the course of the project, I gained a much deeper of understanding of how to organizes posts and pages  but also strategies to take advantage of templating within the WordPress hierarchy. Before starting the project I had only use WordPress for blogs, now I know how I can use Pods to organize complex sets of information and how to use the templates to make sure that it displays correctly.</p> 
 
-                  <img src="images/WordPress_diagram.jpg" alt="Standard WordPress organization" />
-                  <p></p> 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div> 
-            </div>
-          </div>
+            <p>As for skills that I developed it clear that I have much better and deeper understanding of WordPress.  We were able to build a new database specific to the project needs on top of the existing WordPress structure.  Because I was able to follow the schedule that we outlined at the beginning of the project, the project was delivered on time and on budget.  As for Project Management, this was the first time that I used Basecamp on a relatively large, complex project and I found it to be a very useful tool in terms of organizing our discussions as well as tracking resources that might be implemented in the future.</p> 
 
+            <p>Before this project, I had only been working on websites that I built from the ground up so I was happy to have the experience of coming on to a project midway through and discovering ways within my scope to make a positive contribution. I also liked that these talks were generating a lot of data and that it was my job to make that data accessible. The natural extension of this project would be ways to find out how the relationships between those data point might be visualized.</p> </p>
+            <p></p>
+          </section>
 
-
-      <section id="section3">
-        <a href="http://arcydouglass.github.io/d3_wf_donut" target="_blank"><h3>D3 Word Frequency Chart</h3></a>
-        <p class="projectDescription">An experiment in counting and charting the keywords of Milton's text Paradise Lost.  The words are displayed in a donut using the the pie layout from the D3.</p>
-        <a href="https://github.com/arcydouglass/d3_bubble" target="_blank">Github Link</a>
-        <p></p>
-        <a href="http://arcydouglass.github.io/d3_wf_donut" target="_blank"><img src="images/d3_pieChart.png" alt="D3 pie chart screenshot"/></a>
-        <p></p>
-      </section>
+          <section id="section2">
+            <h3>Diagrams</h3></a>
+            <p class="projectDescription">WordPress organizes posts according to Categories and Tags.  Not only does this allow the posts to be searchable but also allows the posts to be filtered.  This is a diagram of a standard WordPress post:</p>
+            <p></p>
+            <img src="images/WordPress_diagram.jpg" alt="WordPress Categories and Tags" class="small"/></a>
+            <p></p>
+            <p class="projectDescription"eaker Pod that would contain or have references to several different types of information including any speaker resources like their personal website, speaker photos, any social media, information about the event itself and any videos that were associated with the talk.  Here was our first diagram: <p>
+            <p></p>
+            <img src="images/speaker_pod1.jpg" alt="Speaker Pod diagram" class="medium"/></a>
+            <p></p>
+            <p class="projectDescription"> I extended the diagram by adding some of the properties that might be added to the Pods to match the data that was going to be generated by the speaker. <p>
+            <p></p>
+            <img src="images/speaker_pod_names.jpg" alt="Speaker Pod Names"/></a>
+            <p></p>
+            <p class="projectDescription"> Up until this point, the video of the speaker was an aspect of the Speaker Pod.  After some tests, it was realized that not only would this would allow the speaker to have only one video that would be associated with it.  This was a problem because if speaker was to return to Research Club then they would automatically generate multiple videos.The solution was to allow both Videos and the Events to become their own pods.  This allows the videos to be independent of the speaker and allow any Speaker or Event Pod to have multiple videos.  This was the final working diagram: <p>
+            <p></p>
+            <img src="images/revised_speaker_pod.jpg" alt="Revised Speaker Pod" class="large"/></a>
+          </section>
 
 
-      <section id="section4">
-        <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><h3>SVG Experiment</h3></a>
-        <p class="projectDescription">This project was an experiment to incorporate SVG elements into a web page. The arcs are generated according to an algorithm that assigns a location based on an external source like the digits of pi or a random number generator.   </p>
-        <a href="https://github.com/arcydouglass/arcDrawingSite" target="_blank">Github Link</a>
-        <p></p>
-        <a href="#CircleModal" data-toggle="modal" data-target="#CircleModal">Learn More About Related Work</a>
-        <p></p>
-        <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><img src="images/arcDrawingSite.jpg" alt="Arc Drawing screenshot"/></a>
-        <p></p>
-
-          <div class="modal fade" id="CircleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Click to Learn More</h4>
-              </div>
-              <div class="modal-body">
-                <p>Here are some experiments creating complex spaces with circles</p>
-                 <img src="images/yellow1.jpg" alt="Experiment"id="modalRelatedImage"/>
-                 <p></p>
-                 <img src="images/black.jpg" alt="Experiment"id="modalRelatedImage"/>
-                 <p></p>
-                 <img src="images/magenta.jpg" alt="Experiment"id="modalRelatedImage"/>
-                 <p></p>
-                 <img src="images/cyan.jpg" alt="Experiment"id="modalRelatedImage"/>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <section id="section3">
+            <h3>Organization</h3></a>
+            <p class="projectDescription">The next step was to apply the relationships of defined in the diagrams inside the WordPress plugins called Pods.  Pods would allow me to structure the data generated by Research Club within the clearly defined fields of each Pod.  This meant that the Speaker Pod would need places to store all of the data associated with each talk including photos, videos, blog posts and social media links. Each field in the Pod has a specific characteristic taht defines what kind of data is allowed in the field. By using bi-directional fields I was able to share data fields between two pods. Here is the Speaker Pod definition:</p>
+            <p></p>
+            <img src="images/speaker_pod.jpg" alt="Speaker Pod" class="imageMenus"/></a>
+            <p></p>
+            <p class="projectDescription">After some experimentation, I was able to create a similiar definition for the Event Pod.</p>
+            <p></p>
+            <img src="images/event_pod.jpg" alt="Event Pod" class="imageMenus"/></a>
+            <p></p>
+          </section>
 
 
-       <section id="section5">
-        <a href="http://arcydouglass.github.io/massage" target="_blank"><h3>Blueprint for Balance</h3></a>
-        <p class="projectDescription">This project was an assignment for the Portland Code School Primer Class. The purpose of the project was for our team to learn the basics of HTML, CSS and Git.  </p>
-        <a href="https://github.com/arcydouglass/massage" target="_blank">Github Link</a>
-        <p></p>
-        <a href="http://arcydouglass.github.io/massage" target="_blank"><img src="images/Blueprint.jpg" alt="Blueprint for Balance screenshot"/></a>
-        <p></p>
-      </section>
+          <section id="section4">
+            <h3>Implementation</h3></a>
+            <p class="projectDescription">Once each one of the Pods was defined, it was time to begin to load them up with placeholder data.  Here is an example of a typical speaker:</p>
+            <p></p>
+            <img src="images/speaker_example.jpg" alt="Speaker example" class="imageMenus"/></a>
+            <p></p>
+            <p class="projectDescription">A typical event with data was developed from the Event Pod</p>
+            <p></p>
+           <img src="images/event_example.jpg" alt="Event example" class="imageMenus"/></a>
+            <p></p>
+          </section>
+
+
+          <section id="section5">
+            <h3>Templates</h3></a>
+            <p class="projectDescription">In order to format the data that is entered into the Speaker Pod fields, I needed to use a template.  The template was able to take advantage of Pod's magic tags to grab fields from a pod and place the data from the field in an HTML document. By iterated through a field, I was able to pick up multiple values like if the speaker had multiple videos associated with a talk or if an event is associated with multiple speakers.  Here is an example of the some of the Speaker Pod template:  </p>
+            <p></p>
+            <img src="images/speaker_template.jpg" alt="Speaker Template"/></a>
+            <p></p>
+            <p class="projectDescription">The template is rendered as an HTML document as in this example of a speaker page: </p>
+            <p></p>
+            <img src="images/speaker_page.jpg" alt="Speaker Page"/></a>
+          </section>
+          
+
 
     
 
